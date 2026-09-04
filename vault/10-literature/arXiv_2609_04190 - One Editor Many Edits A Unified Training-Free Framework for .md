@@ -1,0 +1,38 @@
+---
+aliases: ["One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing"]
+tags: [literature/arxiv, status/triage]
+arxiv_id: "2609.04190"
+url: "http://arxiv.org/abs/2609.04190v1"
+published: "2026-09-03T17:59:01Z"
+ingested: "2026-09-04T20:49:54Z"
+authors:
+  - "Adheesh Sunil Juvekar"
+  - "Onkar Kishor Susladkar"
+  - "Kiet A. Nguyen"
+  - "Muntasir Wahed"
+  - "Nabeel Bashir"
+  - "Xiaona Zhou"
+  - "Tianjiao Yu"
+  - "Vedant Shah"
+  - "Ismini Lourentzou"
+---
+
+# One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing
+
+## Abstract
+
+> Video editing spans diverse editing paradigms, yet achieving high-quality instruction-guided and
+> subject-guided editing within a single unified framework remains challenging. We introduce
+> EditVid, a training-free framework combining sparse causal memory for local coherence,
+> correspondence-based post-attention token injection for long-range identity preservation, and
+> soft latent blending for edit locality. The same framework supports instruction-guided and
+> reference-guided edits, including style transfer, attribute modification, object insertion,
+> part-level editing, and subject replacement. On FiVE, EditVid achieves 78.16 FiVE-Acc, compared
+> with 58.95 for the strongest evaluated training-free baseline, while obtaining competitive
+> results on IVEBench. A user study further shows a 51.8\% overall preference for EditVid over 7
+> competing methods.
+
+---
+## Reading Notes
+*Annotations below. Update the status tag as you triage; the arxiv_id frontmatter must survive edits - it is the dedup key.*
+
