@@ -12,6 +12,14 @@ members:   # ONE ROW PER MEMBER, EDIT AT GENESIS
     trust_tier: verified
     joined: "YYYY-MM-DD"
 
+  - name: "Test Engineer"
+    github: "satsolverv124"
+    orcid: "0000-0000-0000-0000"
+    email: "205302507+satsolverv124@users.noreply.github.com"
+    role: "systems"
+    trust_tier: verified
+    joined: "2026-09-04"
+
 governance:
   decision_rule: "majority"
   objection_window_days: 7
