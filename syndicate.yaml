@@ -1,16 +1,16 @@
 syndicate:
-  name: "CHANGE-ME"
-  formed: "YYYY-MM-DD"
+  name: "Shakedown Syndicate"
+  formed: "2026-09-04"
   oracle_ref: "template"   # replaced by genesis.sig at provisioning
 
 members:   # ONE ROW PER MEMBER, EDIT AT GENESIS
-  - name: "Full Name"
-    github: "github-handle"
+  - name: "Nicholas Maino"
+    github: "bigDSanalyst"
     orcid: "0000-0000-0000-0000"
-    email: "ID+handle@users.noreply.github.com"   # see README: finding your noreply address
-    role: "theory"
+    email: "51167247+bigDSanalyst@users.noreply.github.com"
+    role: "founder"
     trust_tier: verified
-    joined: "YYYY-MM-DD"
+    joined: "2026-09-04"
 
   - name: "Test Engineer"
     github: "satsolverv124"
