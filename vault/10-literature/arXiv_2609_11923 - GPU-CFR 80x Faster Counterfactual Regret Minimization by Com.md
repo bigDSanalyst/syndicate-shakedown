@@ -1,0 +1,42 @@
+---
+aliases: ["GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay"]
+tags: [literature/arxiv, status/triage]
+arxiv_id: "2609.11923"
+url: "http://arxiv.org/abs/2609.11923v1"
+published: "2026-09-10T17:58:14Z"
+ingested: "2026-09-11T10:34:44Z"
+authors:
+  - "Boning Li"
+  - "Longbo Huang"
+---
+
+# GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay
+
+## Abstract
+
+> Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still
+> runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of
+> states in millions of small, interdependent gather and scatter steps issued through a generic
+> tree interface. On a GPU every kernel finishes in microseconds, so kernel launches and framework
+> dispatch dominate the run time, and prior GPU implementations have lost to optimized CPU code.
+> We observe that for a fixed game, everything about a CFR iteration except the numerical values
+> is known before the first iteration runs. We propose GPU-CFR, a compiler and runtime built on
+> this observation. It compiles any game once into static dataflow: flat edge and information-set
+> arrays, precomputed indices, and depth-level batched passes fix the entire operation sequence,
+> and only solver state changes between iterations. Static chance folding, depth-level execution
+> blocks, and a dual-lane reach buffer cut the number of framework operations by up to 18.1x.
+> Because shapes, indices, and buffer addresses never change, CUDA Graph Replay records the
+> iteration once and replays it with a single graph launch. On one A100, across an eight-game
+> suite that spans card games, dice games, and board games, GPU-CFR runs 29.8--80.4x faster than
+> the fastest prior GPU CFR on the same accelerator, and 14--258x faster than LiteEFG, one of the
+> fastest open-source CPU implementations, on the four largest games. The compiled representation
+> carries most of that margin: on eight CPU threads with no accelerator it is already 2.2--51.1x
+> faster than the GPU baseline. On the CPU the optimized path reproduces the reference iterates
+> bitwise, and tree construction and graph capture pay for themselves within the first solve. GPU-
+> CFR beats every CPU and GPU baseline on the mid-to-large games of the suite without changing the
+> update rule.
+
+---
+## Reading Notes
+*Annotations below. Update the status tag as you triage; the arxiv_id frontmatter must survive edits - it is the dedup key.*
+

@@ -1,0 +1,43 @@
+---
+aliases: ["Can Edge-Deployable Vision-Language Models Identify Species?"]
+tags: [literature/arxiv, status/triage]
+arxiv_id: "2609.11916"
+url: "http://arxiv.org/abs/2609.11916v1"
+published: "2026-09-10T17:57:32Z"
+ingested: "2026-09-11T10:34:44Z"
+authors:
+  - "William Zhou"
+  - "Mayukha Siripuram"
+  - "Xiao Yan"
+  - "Ziqi Liu"
+  - "Yi Ding"
+---
+
+# Can Edge-Deployable Vision-Language Models Identify Species?
+
+## Abstract
+
+> Camera traps often run in the field on edge hardware with limited or no connectivity, making
+> small, locally-deployable vision-language models (VLMs) -- not frontier-scale ones -- the
+> practically relevant class to evaluate for species identification. We test whether models in
+> this deployment-relevant 2--8B range carry genuine taxonomic knowledge, evaluating four such
+> VLMs (Qwen3-VL 2B/4B/8B, Gemma3 4B) against the domain-specific specialist BioCLIP (300M
+> parameters) on a 96-species task, comparing clean iNaturalist photographs against camera-trap
+> imagery from 6 LILA.science collections, on two independently-sampled evaluation sets. All
+> models identify species far above chance, but every model -- general-purpose or specialist --
+> degrades sharply on field imagery (domain gaps of 9.6--26.6 percentage points, consistent across
+> taxonomic levels and both evaluation sets), indicating the degradation reflects general image
+> legibility rather than fine-grained discrimination failure. BioCLIP substantially outperforms
+> every VLM tested (by 33.2--59.2 percentage points across an expanded 200-image sample for every
+> model) despite its far smaller size, suggesting the gap reflects specialized training data
+> rather than model scale; yet BioCLIP's own domain gap (18.0 points) is statistically
+> indistinguishable from the best VLM's (22.3 points), suggesting the clean-to-field degradation
+> itself is a property of the image-quality shift rather than a general-purpose-model weakness.
+> Under open-set prompting, 5.9--9.6% of responses are syntactically valid but taxonomically
+> nonexistent species names; the relative fabrication-rate ranking across models replicates
+> exactly across both evaluation sets, a more robust finding than any single point estimate.
+
+---
+## Reading Notes
+*Annotations below. Update the status tag as you triage; the arxiv_id frontmatter must survive edits - it is the dedup key.*
+
