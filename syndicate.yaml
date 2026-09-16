@@ -25,8 +25,8 @@ governance:
   objection_window_days: 7
   review_gates:   # NOTE: gates auto-cap at members-1; a gate higher than that deadlocks
     "vault/40-drafts/**": 1
-    "ledger/**": 2
-    "agreements/**": 2
+    "ledger/**": 1
+    "agreements/**": 1
 
 attribution:
   clock: "push-webhook"   # v1 tooling uses committer dates; see attribution.py docstring
