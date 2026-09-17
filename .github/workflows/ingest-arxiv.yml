@@ -1,7 +1,11 @@
 name: ingest-arxiv
 on:
-  schedule:
-    - cron: "0 6 * * *"
+  # Schedule disabled per ledger row 51: arXiv returns HTTP 406 to GitHub
+  # Actions' Azure egress, so a scheduled run here failed every morning and
+  # taught everyone to ignore a red check. Manual dispatch only until the
+  # egress decision lands (notebook cadence, self-hosted runner, or OAI-PMH).
+  # Proven both ways: 7 header variants from 2 repos refused from Azure; the
+  # identical code ingested 27 notes from a Google Cloud address.
   workflow_dispatch: {}
 permissions: {contents: write}
 concurrency: {group: repo-write, cancel-in-progress: false}

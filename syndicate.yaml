@@ -16,6 +16,7 @@ members:   # ONE ROW PER MEMBER, EDIT AT GENESIS
     github: "satsolverv124"
     orcid: "0000-0000-0000-0000"
     email: "205302507+satsolverv124@users.noreply.github.com"
+    emails: ["maiknown@gmail.com"]   # web-UI vs laptop; both are this member (row 29)
     role: "systems"
     trust_tier: verified
     joined: "2026-09-04"
@@ -38,4 +39,7 @@ attribution:
 
 exit:
   default_split: "per-ledger"
-  archive_targets: [arxiv, zenodo]
+  # Zenodo first: the route with no institutional gate. arXiv needs an
+  # endorsement for a first submission in a category - see docs/PUBLICATION.md
+  # in the template.
+  archive_targets: [zenodo, arxiv]
