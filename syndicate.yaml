@@ -3,6 +3,20 @@ syndicate:
   formed: "2026-09-04"
   oracle_ref: "template"   # replaced by genesis.sig at provisioning
 
+template:   # lineage: what this repo tracks, and from where.
+            # The commit below is the OLDEST commit the template repo still
+            # has, not the one this repo was generated from - generation
+            # predates the template's own history, so no commit describes it.
+            # Everything since was propagated file by file, which is exactly
+            # the state lineage-by-commit replaces. Anchoring here makes the
+            # first drift run over-report rather than under-report: a checklist
+            # with items already applied costs a read, a false "in sync" costs
+            # the thing the check exists for.
+  repo: "bigDSanalyst/syndicate-genesis"
+  ref: "main"
+  commit: "c599ca536cc3651f1d8e3e372ce2ca175cf7efbc"
+  recorded: "2026-09-17"
+
 members:   # ONE ROW PER MEMBER, EDIT AT GENESIS
   - name: "Nicholas Maino"
     github: "bigDSanalyst"

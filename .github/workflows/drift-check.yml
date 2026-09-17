@@ -1,0 +1,23 @@
+name: drift-check
+on:
+  # Dispatch-only, deliberately, and NOT because this is a template.
+  #
+  # Drift exits 3, so a scheduled run goes red while anything is outstanding -
+  # and this repo's backlog is 18 files. A check that is red every week for a
+  # backlog nobody is working teaches everyone to ignore checks, which is row
+  # 51's lesson one workflow over. Add a weekly schedule once the checklist is
+  # applied and a green run means something.
+  workflow_dispatch: {}
+permissions: {contents: read}
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r tools/requirements.txt
+      - name: compare this repo's lineage against the template
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python tools/drift_check.py check
