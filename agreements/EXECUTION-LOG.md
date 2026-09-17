@@ -10,7 +10,7 @@ verified member other than the signer (submit the APPROVAL BEFORE merging).
 | Member | GitHub | Manifest email | Date (UTC) | sha256(consortium-agreement.md) |
 |---|---|---|---|---|
 | Test Engineer | @satsolverv124 | 205302507+satsolverv124@users.noreply.github.com | 2026-09-15 | 75e554fb75252cbd1d7c49b65a491b4660b83cc5bef763b52a992013f3abf60d |
-
+| Nicholas Maino | @bigDSanalyst | 51167247+bigDSanalyst@users.noreply.github.com | 2026-09-17 | 75e554fb75252cbd1d7c49b65a491b4660b83cc5bef763b52a992013f3abf60d |
 <!-- Compute the hash column from the repo root: sha256sum agreements/consortium-agreement.md
      One row per member, via PR. Never edit another member's row. -->
 
