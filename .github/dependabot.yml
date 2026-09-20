@@ -1,0 +1,29 @@
+# Actions are pinned to commit SHAs (a tag is mutable; a compromised tag moves
+# under you). Pinning without an updater is how a repo ends up three years
+# behind on a security fix, so the two ship together: the pin freezes what runs,
+# this raises the PR that moves it, and the PR goes through the same gate as any
+# other change to the template.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: {interval: weekly}
+    commit-message: {prefix: "ci"}
+    labels: ["dependencies"]
+    # Two blind spots this cannot cover, both found live (row 59):
+    #   1. A workflow added while an actions PR is already open is not in that
+    #      PR, and a merged PR is never revisited - so the new file keeps the
+    #      old pin until the next release happens to raise a fresh one.
+    #   2. `.yml.disabled` is not parsed at all, so those pins never move.
+    # The suite catches both: every workflow, disabled ones included, must pin
+    # one SHA per action. When a bump lands, check the guard is still green
+    # rather than assuming the PR reached every file.
+
+  - package-ecosystem: pip
+    directories: ["/tools", "/tests"]
+    schedule: {interval: weekly}
+    commit-message: {prefix: "deps"}
+    labels: ["dependencies"]
+    # opentimestamps-client is pinned deliberately: release 0.4.5 broke imports
+    # and serialization silently (ledger row 3). Read the changelog before
+    # merging a bump, and re-run the anchor path, not just the suite.

@@ -1,0 +1,92 @@
+{
+  "clock": "committer dates; push-time gating is the admissible clock per 4.2 (v1 limitation)",
+  "generated_at": "2026-09-20T21:37:45Z",
+  "members": [
+    {
+      "email": "51167247+bigDSanalyst@users.noreply.github.com",
+      "github": "bigDSanalyst",
+      "joined": "2026-09-04",
+      "name": "Nicholas Maino",
+      "orcid": "0000-0000-0000-0000",
+      "role": "founder",
+      "trust_tier": "verified"
+    },
+    {
+      "email": "205302507+satsolverv124@users.noreply.github.com",
+      "emails": [
+        "maiknown@gmail.com"
+      ],
+      "github": "satsolverv124",
+      "joined": "2026-09-04",
+      "name": "Test Engineer",
+      "orcid": "0000-0000-0000-0000",
+      "role": "systems",
+      "trust_tier": "verified"
+    }
+  ],
+  "objection_deadline": "2026-09-27T21:37:45Z",
+  "raw": {
+    "bigDSanalyst": {
+      "churn_w": "1664",
+      "files": [
+        ".env.example",
+        ".gitattributes",
+        ".github/CODEOWNERS",
+        ".github/workflows/anchor.yml",
+        ".github/workflows/ingest-arxiv.yml",
+        ".github/workflows/pq-verify.yml.disabled",
+        ".gitignore",
+        "LICENSE",
+        "LICENSE-CONTENT.md",
+        "README.md",
+        "SECURITY.md",
+        "agents/mcp.json.template",
+        "agents/queries.yaml",
+        "agreements/EXECUTION-LOG.md",
+        "agreements/consortium-agreement.md",
+        "agreements/pre-existing-ip.md",
+        "bootstrap.sh",
+        "ledger/windows/2026-W36/attribution.csv",
+        "ledger/windows/2026-W36/evidence.json",
+        "syndicate.yaml",
+        "tools/anchor.py",
+        "tools/attribution.py",
+        "tools/ingest_arxiv.py",
+        "tools/requirements.txt",
+        "vault/00-inbox/.gitkeep",
+        "vault/10-literature/.gitkeep",
+        "vault/20-notes/.gitkeep",
+        "vault/20-notes/LEARNINGS.md",
+        "vault/20-notes/invariant-question.md",
+        "vault/30-experiments/.gitkeep",
+        "vault/40-drafts/.gitkeep",
+        "vault/50-decisions/.gitkeep",
+        "vault/MAP.md",
+        "vault/_templates/paper-note.md",
+        "vault/maps/.gitkeep"
+      ],
+      "merges": 1,
+      "reviews": 1
+    },
+    "satsolverv124": {
+      "churn_w": "8",
+      "files": [
+        "syndicate.yaml"
+      ],
+      "merges": 1,
+      "reviews": 2
+    }
+  },
+  "survivor_weight": "0.3",
+  "weights_used": {
+    "breadth": "0.25",
+    "churn": "0.4375",
+    "review": "0.3125"
+  },
+  "window": {
+    "end": "2026-09-07",
+    "label": "2026-W37",
+    "start": "2026-08-31"
+  },
+  "window_head": "326bd1c2784f2779b8326c4de925de4b0a8a30b8"
+}
