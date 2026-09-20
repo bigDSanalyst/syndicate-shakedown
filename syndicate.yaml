@@ -36,6 +36,20 @@ members:   # ONE ROW PER MEMBER, EDIT AT GENESIS
     joined: "2026-09-04"
 
 governance:
+  # Two members, so formation is multi. The marker is sticky in the other
+  # direction: a solo syndicate must declare itself, because a one-member
+  # roster deadlocks on its first gated PR and looks identical to a two-person
+  # syndicate whose second member never arrived (template rows 9, 53, 55).
+  formation: multi        # multi | solo
+  # The date this syndicate started signing commits. NOT SET YET - this is a
+  # decision, not a default. Members configure an SSH signing key, add its
+  # public line to their own manifest row (`keys:`), and then this date goes
+  # here in the same PR. Commits before it are never checked; member commits
+  # after it must carry a signature by a key this manifest lists for THAT
+  # author - a good signature by another member's key is still impersonation.
+  # tools/verify_signatures.py exits 1 until this is set, and the workflow is
+  # dispatch-only, so nothing goes red in the meantime.
+  signing_since: "YYYY-MM-DD"
   decision_rule: "majority"
   objection_window_days: 7
   review_gates:   # NOTE: gates auto-cap at members-1; a gate higher than that deadlocks
