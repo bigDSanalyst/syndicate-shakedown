@@ -1,0 +1,57 @@
+name: verify-claims
+# The claims ledger's gate. No path filter: evidence can live anywhere in the
+# repository, and a pull request that changes an artifact outside ledger/ can
+# break a claim that cites it.
+on:
+  pull_request:
+  # An approval arrives after the push it approves; without this trigger the
+  # approval check would run before any review existed and never again.
+  pull_request_review:
+    types: [submitted, dismissed]
+  push:
+    branches: [main]
+permissions: {contents: read}
+jobs:
+  offline:
+    name: doctor_claims (offline)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with: {fetch-depth: 0}    # CLM013 compares each claim's history with the base
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+        with: {python-version: "3.12"}
+      - run: pip install -r tools/requirements.txt
+      # No pipe: the step's exit status is doctor_claims' own, so a BLOCK fails it.
+      - name: every claim resolves, names who may act, and only grew
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: python3 tools/doctor_claims.py --json --base "$BASE"
+
+  confirm-approvals:
+    name: confirm approvals (online)
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions: {contents: read, pull-requests: read}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with: {fetch-depth: 0}
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+        with: {python-version: "3.12"}
+      - run: pip install -r tools/requirements.txt
+      - name: each decision this PR adds is approved, on its head commit, by who it names
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: python3 tools/confirm_approvals.py --pr "$PR" --base "$BASE" --head "$HEAD"
+
+  tests:
+    name: claims tooling tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+        with: {python-version: "3.12"}
+      - run: pip install -r tools/requirements.txt -r tests/requirements.txt
+      - run: python3 -m pytest -q tests/
