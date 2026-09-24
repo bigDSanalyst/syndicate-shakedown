@@ -1,0 +1,3769 @@
+[
+  {
+    "id": "15713166981",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 13,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/13",
+        "id": 4632151183,
+        "number": 13,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "8fad4ad6ab4f36500304b8206b355ab3e1d3e9b7",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1a2b8605bc663b54509d9638a98f4c32253e3b92",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-24T23:32:37Z"
+  },
+  {
+    "id": "15713111205",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5311457528,
+        "node_id": "PRR_kwDOUOqZC88AAAABPJZo-A",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "8fad4ad6ab4f36500304b8206b355ab3e1d3e9b7",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/13#pullrequestreview-5311457528",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/13",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/13#pullrequestreview-5311457528"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/13"
+          }
+        },
+        "submitted_at": "2026-09-24T23:31:20Z",
+        "updated_at": "2026-09-24T23:31:20Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/13",
+        "id": 4632151183,
+        "number": 13,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "8fad4ad6ab4f36500304b8206b355ab3e1d3e9b7",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1a2b8605bc663b54509d9638a98f4c32253e3b92",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-24T23:31:21Z"
+  },
+  {
+    "id": "15712829706",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 13,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/13",
+        "id": 4632151183,
+        "number": 13,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "8fad4ad6ab4f36500304b8206b355ab3e1d3e9b7",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1a2b8605bc663b54509d9638a98f4c32253e3b92",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-24T23:24:37Z"
+  },
+  {
+    "id": "21763820491",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 44164776096,
+      "ref": "refs/heads/main",
+      "head": "1a2b8605bc663b54509d9638a98f4c32253e3b92",
+      "before": "66951340d4d17617dbda87c1b837cacbff5f1b1b"
+    },
+    "public": true,
+    "created_at": "2026-09-21T13:39:27Z"
+  },
+  {
+    "id": "21737827847",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 44155879608,
+      "ref": "refs/heads/main",
+      "head": "66951340d4d17617dbda87c1b837cacbff5f1b1b",
+      "before": "bb01b526635f59462affe07bd4a20a20b8ef7714"
+    },
+    "public": true,
+    "created_at": "2026-09-21T11:53:53Z"
+  },
+  {
+    "id": "21737011172",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "fix/correct-inherited-w36",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/correct-inherited-w36",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-21T11:49:18Z"
+  },
+  {
+    "id": "15426292345",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 12,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/12",
+        "id": 4591144013,
+        "number": 12,
+        "head": {
+          "ref": "fix/correct-inherited-w36",
+          "sha": "7b5f34b012335898fd572f2449f46a81e327a505",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "bb01b526635f59462affe07bd4a20a20b8ef7714",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-21T11:53:51Z"
+  },
+  {
+    "id": "15426262565",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5266268431,
+        "node_id": "PRR_kwDOUOqZC88AAAABOeThDw",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "7b5f34b012335898fd572f2449f46a81e327a505",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/12#pullrequestreview-5266268431",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/12",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/12#pullrequestreview-5266268431"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/12"
+          }
+        },
+        "submitted_at": "2026-09-21T11:53:21Z",
+        "updated_at": "2026-09-21T11:53:21Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/12",
+        "id": 4591144013,
+        "number": 12,
+        "head": {
+          "ref": "fix/correct-inherited-w36",
+          "sha": "7b5f34b012335898fd572f2449f46a81e327a505",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "bb01b526635f59462affe07bd4a20a20b8ef7714",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-21T11:53:23Z"
+  },
+  {
+    "id": "15426076035",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 12,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/12",
+        "id": 4591144013,
+        "number": 12,
+        "head": {
+          "ref": "fix/correct-inherited-w36",
+          "sha": "7b5f34b012335898fd572f2449f46a81e327a505",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "bb01b526635f59462affe07bd4a20a20b8ef7714",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-21T11:50:09Z"
+  },
+  {
+    "id": "21685846183",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 44105526581,
+      "ref": "refs/heads/main",
+      "head": "bb01b526635f59462affe07bd4a20a20b8ef7714",
+      "before": "5c86f9fec57a1c3187b70901160c0dce982383b8"
+    },
+    "public": true,
+    "created_at": "2026-09-20T21:42:22Z"
+  },
+  {
+    "id": "15392703049",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 11,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/11",
+        "id": 4586204331,
+        "number": 11,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "34c72783c7b16c7a4e8135bdcdb9bf9ea122b00e",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "5c86f9fec57a1c3187b70901160c0dce982383b8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-20T21:42:21Z"
+  },
+  {
+    "id": "15392612896",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 11,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/11",
+        "id": 4586204331,
+        "number": 11,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "34c72783c7b16c7a4e8135bdcdb9bf9ea122b00e",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "5c86f9fec57a1c3187b70901160c0dce982383b8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-20T21:38:52Z"
+  },
+  {
+    "id": "21685641918",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 44105338257,
+      "ref": "refs/heads/claude/repo-analysis-recommendations-g0myqw",
+      "head": "34c72783c7b16c7a4e8135bdcdb9bf9ea122b00e",
+      "before": "686348aae8ef26a3a4cd5ff894338ddf0fbee212"
+    },
+    "public": true,
+    "created_at": "2026-09-20T21:38:26Z"
+  },
+  {
+    "id": "21520841264",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43893996005,
+      "ref": "refs/heads/main",
+      "head": "5c86f9fec57a1c3187b70901160c0dce982383b8",
+      "before": "f032e6d5c7298dc33c5d8da81d3ab8345294814e"
+    },
+    "public": true,
+    "created_at": "2026-09-17T23:53:45Z"
+  },
+  {
+    "id": "21515993670",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "test/arxiv-accept",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/test/arxiv-accept",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-17T09:08:54Z"
+  },
+  {
+    "id": "21505349153",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43843670692,
+      "ref": "refs/heads/main",
+      "head": "f032e6d5c7298dc33c5d8da81d3ab8345294814e",
+      "before": "90c49ca3fdad938cdcdc26389c279d760fb03b65"
+    },
+    "public": true,
+    "created_at": "2026-09-17T12:01:20Z"
+  },
+  {
+    "id": "21503490564",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-4",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-4",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:24:38Z"
+  },
+  {
+    "id": "21472810102",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "test/arxiv-accept",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/test/arxiv-accept",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-16T22:52:53Z"
+  },
+  {
+    "id": "21454975945",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "claude/repo-analysis-recommendations-g0myqw",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/claude/repo-analysis-recommendations-g0myqw",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-16T12:06:11Z"
+  },
+  {
+    "id": "15258242130",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 10,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/10",
+        "id": 4563909805,
+        "number": 10,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "686348aae8ef26a3a4cd5ff894338ddf0fbee212",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f032e6d5c7298dc33c5d8da81d3ab8345294814e",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-17T23:53:44Z"
+  },
+  {
+    "id": "15258226889",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5242534609,
+        "node_id": "PRR_kwDOUOqZC88AAAABOHq60Q",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "686348aae8ef26a3a4cd5ff894338ddf0fbee212",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/10#pullrequestreview-5242534609",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/10",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/10#pullrequestreview-5242534609"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/10"
+          }
+        },
+        "submitted_at": "2026-09-17T23:53:17Z",
+        "updated_at": "2026-09-17T23:53:17Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/10",
+        "id": 4563909805,
+        "number": 10,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "686348aae8ef26a3a4cd5ff894338ddf0fbee212",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f032e6d5c7298dc33c5d8da81d3ab8345294814e",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-17T23:53:20Z"
+  },
+  {
+    "id": "15257982736",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 10,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/10",
+        "id": 4563909805,
+        "number": 10,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "686348aae8ef26a3a4cd5ff894338ddf0fbee212",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "f032e6d5c7298dc33c5d8da81d3ab8345294814e",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-17T23:46:04Z"
+  },
+  {
+    "id": "21442566476",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43893610904,
+      "ref": "refs/heads/claude/repo-analysis-recommendations-g0myqw",
+      "head": "686348aae8ef26a3a4cd5ff894338ddf0fbee212",
+      "before": "7b705663942e0513b9e16c6b2ed366dab4b83960"
+    },
+    "public": true,
+    "created_at": "2026-09-17T23:45:47Z"
+  },
+  {
+    "id": "21432726233",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "fix/propagate-template-fixes",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/propagate-template-fixes",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-16T14:59:54Z"
+  },
+  {
+    "id": "21394241065",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-5",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-5",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:36:20Z"
+  },
+  {
+    "id": "21389956331",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43842675642,
+      "ref": "refs/heads/main",
+      "head": "90c49ca3fdad938cdcdc26389c279d760fb03b65",
+      "before": "8e8223381ea4770f31ae74c3d8a62ae6bae1f9d0"
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:47:06Z"
+  },
+  {
+    "id": "15215886103",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 9,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/9",
+        "id": 4557967048,
+        "number": 9,
+        "head": {
+          "ref": "bigDSanalyst-patch-5",
+          "sha": "ad7e74640846edd31e082f7eee0dc5b3de7aa6f9",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1543a78c3159edba60bc677c3fa0a3f550f86e85",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:40:22Z"
+  },
+  {
+    "id": "21389174160",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43842203604,
+      "ref": "refs/heads/main",
+      "head": "8e8223381ea4770f31ae74c3d8a62ae6bae1f9d0",
+      "before": "1543a78c3159edba60bc677c3fa0a3f550f86e85"
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:40:23Z"
+  },
+  {
+    "id": "15215867249",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5235104080,
+        "node_id": "PRR_kwDOUOqZC88AAAABOAlZUA",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "ad7e74640846edd31e082f7eee0dc5b3de7aa6f9",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/9#pullrequestreview-5235104080",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/9",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/9#pullrequestreview-5235104080"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/9"
+          }
+        },
+        "submitted_at": "2026-09-17T11:40:04Z",
+        "updated_at": "2026-09-17T11:40:04Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/9",
+        "id": 4557967048,
+        "number": 9,
+        "head": {
+          "ref": "bigDSanalyst-patch-5",
+          "sha": "ad7e74640846edd31e082f7eee0dc5b3de7aa6f9",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1543a78c3159edba60bc677c3fa0a3f550f86e85",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:40:04Z"
+  },
+  {
+    "id": "15215782357",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 9,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/9",
+        "id": 4557967048,
+        "number": 9,
+        "head": {
+          "ref": "bigDSanalyst-patch-5",
+          "sha": "ad7e74640846edd31e082f7eee0dc5b3de7aa6f9",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "1543a78c3159edba60bc677c3fa0a3f550f86e85",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:38:35Z"
+  },
+  {
+    "id": "21388536808",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "fix/instance-remediation",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/fix/instance-remediation",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-17T10:58:58Z"
+  },
+  {
+    "id": "15213594508",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 8,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/8",
+        "id": 4557633867,
+        "number": 8,
+        "head": {
+          "ref": "fix/instance-remediation",
+          "sha": "493e9979cc1252276ebe4f9b8b8a4fd8a302edb8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "cc0eb6ed75d9ebfc3d3b9507822521788f55c3b6",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:00:57Z"
+  },
+  {
+    "id": "21386538131",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43839479112,
+      "ref": "refs/heads/main",
+      "head": "1543a78c3159edba60bc677c3fa0a3f550f86e85",
+      "before": "cc0eb6ed75d9ebfc3d3b9507822521788f55c3b6"
+    },
+    "public": true,
+    "created_at": "2026-09-17T11:00:58Z"
+  },
+  {
+    "id": "15213491508",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 8,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/8",
+        "id": 4557633867,
+        "number": 8,
+        "head": {
+          "ref": "fix/instance-remediation",
+          "sha": "493e9979cc1252276ebe4f9b8b8a4fd8a302edb8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "cc0eb6ed75d9ebfc3d3b9507822521788f55c3b6",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-17T10:59:13Z"
+  },
+  {
+    "id": "21359290772",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43803550771,
+      "ref": "refs/heads/main",
+      "head": "cc0eb6ed75d9ebfc3d3b9507822521788f55c3b6",
+      "before": "a026e45dc0ffe21908c570cdbc6a8f473f5d11f3"
+    },
+    "public": true,
+    "created_at": "2026-09-17T00:46:34Z"
+  },
+  {
+    "id": "21342651696",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43797979653,
+      "ref": "refs/heads/test/arxiv-accept",
+      "head": "1061076e5a3fde66b640247ea25468dc1a470519",
+      "before": "0d4e1c2e8f5e9e2593be2c3f6e1a4333e0e58997"
+    },
+    "public": true,
+    "created_at": "2026-09-16T22:54:03Z"
+  },
+  {
+    "id": "21341944716",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43798039695,
+      "ref": "refs/heads/test/arxiv-accept",
+      "head": "6455ed612606f47284644d207cfb3568faa27e3a",
+      "before": "9d7e2df88a7b9c6f7743ddaafde321935d01f0dc"
+    },
+    "public": true,
+    "created_at": "2026-09-16T22:55:13Z"
+  },
+  {
+    "id": "21341885577",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43797994199,
+      "ref": "refs/heads/test/arxiv-accept",
+      "head": "9d7e2df88a7b9c6f7743ddaafde321935d01f0dc",
+      "before": "1061076e5a3fde66b640247ea25468dc1a470519"
+    },
+    "public": true,
+    "created_at": "2026-09-16T22:54:20Z"
+  },
+  {
+    "id": "21314463634",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43756646416,
+      "ref": "refs/heads/main",
+      "head": "7b705663942e0513b9e16c6b2ed366dab4b83960",
+      "before": "0a7905a398d78d11191b26958a866d936220ac88"
+    },
+    "public": true,
+    "created_at": "2026-09-16T14:01:21Z"
+  },
+  {
+    "id": "21314141407",
+    "type": "PushEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43762736238,
+      "ref": "refs/heads/main",
+      "head": "1f6d30abdc327553ffb7e8e337b94da176ec8eb3",
+      "before": "7b705663942e0513b9e16c6b2ed366dab4b83960"
+    },
+    "public": true,
+    "created_at": "2026-09-16T15:04:13Z"
+  },
+  {
+    "id": "21310886869",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43758752159,
+      "ref": "refs/heads/claude/repo-analysis-recommendations-g0myqw",
+      "head": "7b705663942e0513b9e16c6b2ed366dab4b83960",
+      "before": "0a7905a398d78d11191b26958a866d936220ac88"
+    },
+    "public": true,
+    "created_at": "2026-09-16T14:23:14Z"
+  },
+  {
+    "id": "21307871277",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43764799830,
+      "ref": "refs/heads/main",
+      "head": "a026e45dc0ffe21908c570cdbc6a8f473f5d11f3",
+      "before": "1f6d30abdc327553ffb7e8e337b94da176ec8eb3"
+    },
+    "public": true,
+    "created_at": "2026-09-16T15:26:33Z"
+  },
+  {
+    "id": "15154150207",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 7,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/7",
+        "id": 4549026886,
+        "number": 7,
+        "head": {
+          "ref": "fix/propagate-template-fixes",
+          "sha": "2aa700acd7d778390505aab406a7996ea573f7c2",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "7b705663942e0513b9e16c6b2ed366dab4b83960",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-16T15:04:12Z"
+  },
+  {
+    "id": "15154128148",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5224456944,
+        "node_id": "PRR_kwDOUOqZC88AAAABN2bi8A",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "2aa700acd7d778390505aab406a7996ea573f7c2",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/7#pullrequestreview-5224456944",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/7",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/7#pullrequestreview-5224456944"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/7"
+          }
+        },
+        "submitted_at": "2026-09-16T15:03:55Z",
+        "updated_at": "2026-09-16T15:03:55Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/7",
+        "id": 4549026886,
+        "number": 7,
+        "head": {
+          "ref": "fix/propagate-template-fixes",
+          "sha": "2aa700acd7d778390505aab406a7996ea573f7c2",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "7b705663942e0513b9e16c6b2ed366dab4b83960",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-16T15:03:56Z"
+  },
+  {
+    "id": "15153855049",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 7,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/7",
+        "id": 4549026886,
+        "number": 7,
+        "head": {
+          "ref": "fix/propagate-template-fixes",
+          "sha": "2aa700acd7d778390505aab406a7996ea573f7c2",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "7b705663942e0513b9e16c6b2ed366dab4b83960",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-16T15:00:10Z"
+  },
+  {
+    "id": "21301222744",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "claude/repo-analysis-recommendations-g0myqw",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/claude/repo-analysis-recommendations-g0myqw",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-16T12:44:38Z"
+  },
+  {
+    "id": "21299941365",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "claude/repo-analysis-recommendations-g0myqw",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/claude/repo-analysis-recommendations-g0myqw",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-16T13:41:12Z"
+  },
+  {
+    "id": "21299730426",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43754466624,
+      "ref": "refs/heads/main",
+      "head": "0a7905a398d78d11191b26958a866d936220ac88",
+      "before": "575be821844e3ac5bb9b15e14344aeef1dbb3802"
+    },
+    "public": true,
+    "created_at": "2026-09-16T13:38:26Z"
+  },
+  {
+    "id": "21299623802",
+    "type": "PushEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43749449657,
+      "ref": "refs/heads/main",
+      "head": "575be821844e3ac5bb9b15e14344aeef1dbb3802",
+      "before": "397df6c6bba3f20d855e664b9726d676b83d9abf"
+    },
+    "public": true,
+    "created_at": "2026-09-16T12:44:26Z"
+  },
+  {
+    "id": "15144290406",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 6,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/6",
+        "id": 4547518677,
+        "number": 6,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "6df1f39b87d62d355eda1c6aeec9db4c1c59c2d9",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "397df6c6bba3f20d855e664b9726d676b83d9abf",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-16T12:44:25Z"
+  },
+  {
+    "id": "15144269203",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5222777320,
+        "node_id": "PRR_kwDOUOqZC88AAAABN01B6A",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "6df1f39b87d62d355eda1c6aeec9db4c1c59c2d9",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/6#pullrequestreview-5222777320",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/6",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/6#pullrequestreview-5222777320"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/6"
+          }
+        },
+        "submitted_at": "2026-09-16T12:44:06Z",
+        "updated_at": "2026-09-16T12:44:06Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/6",
+        "id": 4547518677,
+        "number": 6,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "6df1f39b87d62d355eda1c6aeec9db4c1c59c2d9",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "397df6c6bba3f20d855e664b9726d676b83d9abf",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-16T12:44:08Z"
+  },
+  {
+    "id": "15142837568",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 6,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/6",
+        "id": 4547518677,
+        "number": 6,
+        "head": {
+          "ref": "claude/repo-analysis-recommendations-g0myqw",
+          "sha": "6df1f39b87d62d355eda1c6aeec9db4c1c59c2d9",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "397df6c6bba3f20d855e664b9726d676b83d9abf",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-16T12:21:45Z"
+  },
+  {
+    "id": "21169986672",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "satsolverv124-patch-2",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/satsolverv124-patch-2",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:46:48Z"
+  },
+  {
+    "id": "21160551133",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43612986002,
+      "ref": "refs/heads/main",
+      "head": "397df6c6bba3f20d855e664b9726d676b83d9abf",
+      "before": "3642421edd821aa41d12eea650b46e4935b2c45e"
+    },
+    "public": true,
+    "created_at": "2026-09-15T05:02:57Z"
+  },
+  {
+    "id": "21160493948",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43612932173,
+      "ref": "refs/heads/main",
+      "head": "3642421edd821aa41d12eea650b46e4935b2c45e",
+      "before": "2550dff0a61b15d5146f160920aa081304a13e36"
+    },
+    "public": true,
+    "created_at": "2026-09-15T05:02:06Z"
+  },
+  {
+    "id": "21160211104",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "satsolverv124-patch-2",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/satsolverv124-patch-2",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:57:58Z"
+  },
+  {
+    "id": "15042985182",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 5,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/5",
+        "id": 4533335752,
+        "number": 5,
+        "head": {
+          "ref": "satsolverv124-patch-2",
+          "sha": "0bebe057af6d8c58ef631b591602d6b0bb63a442",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "aa7074b5d2889b096483161fc84c8e28cc38e97f",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:56:58Z"
+  },
+  {
+    "id": "21160146294",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43612606638,
+      "ref": "refs/heads/main",
+      "head": "2550dff0a61b15d5146f160920aa081304a13e36",
+      "before": "aa7074b5d2889b096483161fc84c8e28cc38e97f"
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:56:59Z"
+  },
+  {
+    "id": "15042936401",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5205644879,
+        "node_id": "PRR_kwDOUOqZC88AAAABNkfWTw",
+        "user": {
+          "login": "bigDSanalyst",
+          "id": 51167247,
+          "node_id": "MDQ6VXNlcjUxMTY3MjQ3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/51167247?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bigDSanalyst",
+          "html_url": "https://github.com/bigDSanalyst",
+          "followers_url": "https://api.github.com/users/bigDSanalyst/followers",
+          "following_url": "https://api.github.com/users/bigDSanalyst/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bigDSanalyst/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bigDSanalyst/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bigDSanalyst/subscriptions",
+          "organizations_url": "https://api.github.com/users/bigDSanalyst/orgs",
+          "repos_url": "https://api.github.com/users/bigDSanalyst/repos",
+          "events_url": "https://api.github.com/users/bigDSanalyst/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bigDSanalyst/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": "signature verified — hash matches",
+        "commit_id": "0bebe057af6d8c58ef631b591602d6b0bb63a442",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/5#pullrequestreview-5205644879",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/5",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/5#pullrequestreview-5205644879"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/5"
+          }
+        },
+        "submitted_at": "2026-09-15T04:55:44Z",
+        "updated_at": "2026-09-15T04:55:44Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/5",
+        "id": 4533335752,
+        "number": 5,
+        "head": {
+          "ref": "satsolverv124-patch-2",
+          "sha": "0bebe057af6d8c58ef631b591602d6b0bb63a442",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "aa7074b5d2889b096483161fc84c8e28cc38e97f",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:55:45Z"
+  },
+  {
+    "id": "15042666214",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 5,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/5",
+        "id": 4533335752,
+        "number": 5,
+        "head": {
+          "ref": "satsolverv124-patch-2",
+          "sha": "0bebe057af6d8c58ef631b591602d6b0bb63a442",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "aa7074b5d2889b096483161fc84c8e28cc38e97f",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:48:26Z"
+  },
+  {
+    "id": "15042304528",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 4,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/4",
+        "id": 4533227905,
+        "number": 4,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "4817da630250bccb041ad0a6ee4cd6cdfafa3b4d",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "aa7074b5d2889b096483161fc84c8e28cc38e97f",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:28:35Z"
+  },
+  {
+    "id": "15041960404",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 4,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/4",
+        "id": 4533227905,
+        "number": 4,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "4817da630250bccb041ad0a6ee4cd6cdfafa3b4d",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "aa7074b5d2889b096483161fc84c8e28cc38e97f",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:28:34Z"
+  },
+  {
+    "id": "21158279883",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-3",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-3",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-15T04:28:14Z"
+  },
+  {
+    "id": "21094340936",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43544358851,
+      "ref": "refs/heads/main",
+      "head": "aa7074b5d2889b096483161fc84c8e28cc38e97f",
+      "before": "e5c7fc868cb14d5bf1ca3f1f3389f73340c2e9f9"
+    },
+    "public": true,
+    "created_at": "2026-09-14T13:39:58Z"
+  },
+  {
+    "id": "20818373873",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43295881409,
+      "ref": "refs/heads/main",
+      "head": "e5c7fc868cb14d5bf1ca3f1f3389f73340c2e9f9",
+      "before": "810546b564c355093411a975f6caea682b156dc4"
+    },
+    "public": true,
+    "created_at": "2026-09-11T10:34:47Z"
+  },
+  {
+    "id": "20720108537",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43063839546,
+      "ref": "refs/heads/main",
+      "head": "61f5087a195a26d1e6ba0ac1f39f7d2c6a374dca",
+      "before": "d4e5f459d8381b9ff04eba4598a4c3f1fe1210ea"
+    },
+    "public": true,
+    "created_at": "2026-09-09T10:44:04Z"
+  },
+  {
+    "id": "20676709445",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 43188413842,
+      "ref": "refs/heads/main",
+      "head": "810546b564c355093411a975f6caea682b156dc4",
+      "before": "61f5087a195a26d1e6ba0ac1f39f7d2c6a374dca"
+    },
+    "public": true,
+    "created_at": "2026-09-10T10:34:18Z"
+  },
+  {
+    "id": "20500078834",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42821236527,
+      "ref": "refs/heads/main",
+      "head": "d4e5f459d8381b9ff04eba4598a4c3f1fe1210ea",
+      "before": "cc5c87f7335c75801bb0405c4e053eabf3a9aaa4"
+    },
+    "public": true,
+    "created_at": "2026-09-07T13:18:09Z"
+  },
+  {
+    "id": "20484498712",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42813809509,
+      "ref": "refs/heads/main",
+      "head": "cc5c87f7335c75801bb0405c4e053eabf3a9aaa4",
+      "before": "7573a655f5db83b191b884033cc20a271a481d77"
+    },
+    "public": true,
+    "created_at": "2026-09-07T11:32:22Z"
+  },
+  {
+    "id": "20340449529",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42674076103,
+      "ref": "refs/heads/main",
+      "head": "7573a655f5db83b191b884033cc20a271a481d77",
+      "before": "c7774ee850ba9b4ddd0f8e8def14745ad424a5ae"
+    },
+    "public": true,
+    "created_at": "2026-09-05T13:02:35Z"
+  },
+  {
+    "id": "20338404579",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42653598099,
+      "ref": "refs/heads/main",
+      "head": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+      "before": "dcb96dde74afadc8c40e852a400d91616e95d00b"
+    },
+    "public": true,
+    "created_at": "2026-09-05T05:05:56Z"
+  },
+  {
+    "id": "20336927620",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "revert-3-bigDSanalyst-patch-3",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/revert-3-bigDSanalyst-patch-3",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-05T09:19:24Z"
+  },
+  {
+    "id": "20326464265",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42652959791,
+      "ref": "refs/heads/main",
+      "head": "dcb96dde74afadc8c40e852a400d91616e95d00b",
+      "before": "03ae448b7df68cfc7646daf1c16ac83a1a0c13a8"
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:48:57Z"
+  },
+  {
+    "id": "20322716897",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42636958815,
+      "ref": "refs/heads/main",
+      "head": "adfedf5001fda5f22eb4a1d1e4cc6c109d3c229d",
+      "before": "63e1c730630d194820410d13126448aedc2a13ad"
+    },
+    "public": true,
+    "created_at": "2026-09-04T21:56:26Z"
+  },
+  {
+    "id": "20317109157",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-1",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-1",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:24:56Z"
+  },
+  {
+    "id": "20312842908",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-2",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-2",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:29:16Z"
+  },
+  {
+    "id": "20311616654",
+    "type": "PushEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42648400477,
+      "ref": "refs/heads/main",
+      "head": "350fd968bf9ce66ca1b275ecac7a38001ea37771",
+      "before": "adfedf5001fda5f22eb4a1d1e4cc6c109d3c229d"
+    },
+    "public": true,
+    "created_at": "2026-09-05T02:43:40Z"
+  },
+  {
+    "id": "20305636212",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42631976015,
+      "ref": "refs/heads/main",
+      "head": "023dcc3bcd4a30f1543a1d747886a9f807dac782",
+      "before": "7568a507001a1acd8b3c2830b268073b0ecf0360"
+    },
+    "public": true,
+    "created_at": "2026-09-04T20:22:23Z"
+  },
+  {
+    "id": "20298220604",
+    "type": "PushEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42633466648,
+      "ref": "refs/heads/main",
+      "head": "0ea1bbdf05d8e68c01575349b392542cfb6b9011",
+      "before": "261400c796550c8378d4849836fab6fdb5d10da8"
+    },
+    "public": true,
+    "created_at": "2026-09-04T20:49:00Z"
+  },
+  {
+    "id": "20171054694",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-3",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-3",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:29:22Z"
+  },
+  {
+    "id": "20158089367",
+    "type": "PushEvent",
+    "actor": {
+      "id": 41898282,
+      "login": "github-actions[bot]",
+      "display_login": "github-actions",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions[bot]",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41898282?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42633516510,
+      "ref": "refs/heads/main",
+      "head": "63e1c730630d194820410d13126448aedc2a13ad",
+      "before": "0ea1bbdf05d8e68c01575349b392542cfb6b9011"
+    },
+    "public": true,
+    "created_at": "2026-09-04T20:49:56Z"
+  },
+  {
+    "id": "20157494098",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42632911195,
+      "ref": "refs/heads/main",
+      "head": "261400c796550c8378d4849836fab6fdb5d10da8",
+      "before": "023dcc3bcd4a30f1543a1d747886a9f807dac782"
+    },
+    "public": true,
+    "created_at": "2026-09-04T20:38:56Z"
+  },
+  {
+    "id": "20156264312",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "main",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/main",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-04T20:05:32Z"
+  },
+  {
+    "id": "20134971804",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "bigDSanalyst-patch-3",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/bigDSanalyst-patch-3",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-05T09:21:11Z"
+  },
+  {
+    "id": "20126926991",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42662022352,
+      "ref": "refs/heads/main",
+      "head": "c7774ee850ba9b4ddd0f8e8def14745ad424a5ae",
+      "before": "101aecddaf0f837c89736e52cf7faab6b7eb08e5"
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:36:41Z"
+  },
+  {
+    "id": "20121290659",
+    "type": "CreateEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "ref": "satsolverv124-patch-1",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/satsolverv124-patch-1",
+      "master_branch": "main",
+      "description": "Shakedown: cold-start test of the syndicate-genesis template",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2026-09-05T02:31:25Z"
+  },
+  {
+    "id": "20118415662",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42651693089,
+      "ref": "refs/heads/main",
+      "head": "03ae448b7df68cfc7646daf1c16ac83a1a0c13a8",
+      "before": "3efd2dfaa7999b2c776a1db508f910f6a2d6a345"
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:12:40Z"
+  },
+  {
+    "id": "14478539417",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "assigned",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "assignee": {
+        "login": "bigDSanalyst",
+        "id": 51167247,
+        "node_id": "MDQ6VXNlcjUxMTY3MjQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/51167247?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/bigDSanalyst",
+        "html_url": "https://github.com/bigDSanalyst",
+        "followers_url": "https://api.github.com/users/bigDSanalyst/followers",
+        "following_url": "https://api.github.com/users/bigDSanalyst/following{/other_user}",
+        "gists_url": "https://api.github.com/users/bigDSanalyst/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/bigDSanalyst/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/bigDSanalyst/subscriptions",
+        "organizations_url": "https://api.github.com/users/bigDSanalyst/orgs",
+        "repos_url": "https://api.github.com/users/bigDSanalyst/repos",
+        "events_url": "https://api.github.com/users/bigDSanalyst/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/bigDSanalyst/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "assignees": [
+        {
+          "login": "bigDSanalyst",
+          "id": 51167247,
+          "node_id": "MDQ6VXNlcjUxMTY3MjQ3",
+          "avatar_url": "https://avatars.githubusercontent.com/u/51167247?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bigDSanalyst",
+          "html_url": "https://github.com/bigDSanalyst",
+          "followers_url": "https://api.github.com/users/bigDSanalyst/followers",
+          "following_url": "https://api.github.com/users/bigDSanalyst/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bigDSanalyst/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bigDSanalyst/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bigDSanalyst/subscriptions",
+          "organizations_url": "https://api.github.com/users/bigDSanalyst/orgs",
+          "repos_url": "https://api.github.com/users/bigDSanalyst/repos",
+          "events_url": "https://api.github.com/users/bigDSanalyst/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bigDSanalyst/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:32:30Z"
+  },
+  {
+    "id": "20116763176",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42651517974,
+      "ref": "refs/heads/main",
+      "head": "3efd2dfaa7999b2c776a1db508f910f6a2d6a345",
+      "before": "350fd968bf9ce66ca1b275ecac7a38001ea37771"
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:07:46Z"
+  },
+  {
+    "id": "14477512351",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "merged",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:36:40Z"
+  },
+  {
+    "id": "14477506083",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "reopened",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:36:25Z"
+  },
+  {
+    "id": "14477498655",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:35:49Z"
+  },
+  {
+    "id": "14477491736",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "reopened",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:35:49Z"
+  },
+  {
+    "id": "14477480574",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:35:07Z"
+  },
+  {
+    "id": "14477474947",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5120525705,
+        "node_id": "PRR_kwDOUOqZC88AAAABMTUFiQ",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/3#pullrequestreview-5120525705",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/3#pullrequestreview-5120525705"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3"
+          }
+        },
+        "submitted_at": "2026-09-05T08:35:06Z",
+        "updated_at": "2026-09-05T08:35:07Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:35:08Z"
+  },
+  {
+    "id": "14477411712",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 3,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/3",
+        "id": 4449652911,
+        "number": 3,
+        "head": {
+          "ref": "bigDSanalyst-patch-3",
+          "sha": "5be58a027dca241149b305cb1bcc9d12adf593bc",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "101aecddaf0f837c89736e52cf7faab6b7eb08e5",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T08:32:30Z"
+  },
+  {
+    "id": "20101653422",
+    "type": "PushEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "repository_id": 1357551883,
+      "push_id": 42631506262,
+      "ref": "refs/heads/main",
+      "head": "7568a507001a1acd8b3c2830b268073b0ecf0360",
+      "before": "a5499ec441c286b12c000ee6c0fae71d5f461b76"
+    },
+    "public": true,
+    "created_at": "2026-09-04T20:14:17Z"
+  },
+  {
+    "id": "14472480749",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 2,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/2",
+        "id": 4448705261,
+        "number": 2,
+        "head": {
+          "ref": "bigDSanalyst-patch-2",
+          "sha": "abfbfb4e344d56cc4a3bd283ed706db1eb3780cb",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "03ae448b7df68cfc7646daf1c16ac83a1a0c13a8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:58:01Z"
+  },
+  {
+    "id": "14472394207",
+    "type": "PullRequestReviewEvent",
+    "actor": {
+      "id": 205302507,
+      "login": "satsolverv124",
+      "display_login": "satsolverv124",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/satsolverv124",
+      "avatar_url": "https://avatars.githubusercontent.com/u/205302507?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "review": {
+        "id": 5119846384,
+        "node_id": "PRR_kwDOUOqZC88AAAABMSqn8A",
+        "user": {
+          "login": "satsolverv124",
+          "id": 205302507,
+          "node_id": "U_kgDODDyq6w",
+          "avatar_url": "https://avatars.githubusercontent.com/u/205302507?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/satsolverv124",
+          "html_url": "https://github.com/satsolverv124",
+          "followers_url": "https://api.github.com/users/satsolverv124/followers",
+          "following_url": "https://api.github.com/users/satsolverv124/following{/other_user}",
+          "gists_url": "https://api.github.com/users/satsolverv124/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/satsolverv124/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/satsolverv124/subscriptions",
+          "organizations_url": "https://api.github.com/users/satsolverv124/orgs",
+          "repos_url": "https://api.github.com/users/satsolverv124/repos",
+          "events_url": "https://api.github.com/users/satsolverv124/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/satsolverv124/received_events",
+          "type": "User",
+          "user_view_type": "public",
+          "site_admin": false
+        },
+        "body": null,
+        "commit_id": "abfbfb4e344d56cc4a3bd283ed706db1eb3780cb",
+        "state": "approved",
+        "html_url": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/2#pullrequestreview-5119846384",
+        "pull_request_url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/2",
+        "_links": {
+          "html": {
+            "href": "https://github.com/bigDSanalyst/syndicate-shakedown/pull/2#pullrequestreview-5119846384"
+          },
+          "pull_request": {
+            "href": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/2"
+          }
+        },
+        "submitted_at": "2026-09-05T04:58:01Z",
+        "updated_at": "2026-09-05T04:58:01Z"
+      },
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/2",
+        "id": 4448705261,
+        "number": 2,
+        "head": {
+          "ref": "bigDSanalyst-patch-2",
+          "sha": "abfbfb4e344d56cc4a3bd283ed706db1eb3780cb",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "03ae448b7df68cfc7646daf1c16ac83a1a0c13a8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      },
+      "action": "created"
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:58:02Z"
+  },
+  {
+    "id": "14471761832",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 51167247,
+      "login": "bigDSanalyst",
+      "display_login": "bigDSanalyst",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bigDSanalyst",
+      "avatar_url": "https://avatars.githubusercontent.com/u/51167247?"
+    },
+    "repo": {
+      "id": 1357551883,
+      "name": "bigDSanalyst/syndicate-shakedown",
+      "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 2,
+      "pull_request": {
+        "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown/pulls/2",
+        "id": 4448705261,
+        "number": 2,
+        "head": {
+          "ref": "bigDSanalyst-patch-2",
+          "sha": "abfbfb4e344d56cc4a3bd283ed706db1eb3780cb",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        },
+        "base": {
+          "ref": "main",
+          "sha": "03ae448b7df68cfc7646daf1c16ac83a1a0c13a8",
+          "repo": {
+            "id": 1357551883,
+            "url": "https://api.github.com/repos/bigDSanalyst/syndicate-shakedown",
+            "name": "syndicate-shakedown"
+          }
+        }
+      }
+    },
+    "public": true,
+    "created_at": "2026-09-05T04:30:02Z"
+  }
+]
