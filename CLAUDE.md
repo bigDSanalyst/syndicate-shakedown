@@ -22,6 +22,33 @@ check must never lie**, and to a human reading your output, you are a check.
 If doctor says a thing is blocked, it is blocked. If doctor is silent about
 something, you have not verified it — say so rather than filling the gap.
 
+## The claims ledger
+
+A claim is a safety assertion bound to evidence, at `ledger/claims/<id>.yaml`;
+a section at `ledger/sections/<id>.yaml` is a list of claims it cites. Before
+you say anything about either, run:
+
+    python3 tools/doctor_claims.py --json
+
+and report what it returns — same shape as doctor, same rule.
+
+- **A claim has no status field.** Its state is its last `history:` entry.
+  History is append-only: every decision is a new entry, no entry is ever
+  edited, and a rejected claim stays rejected — a corrected claim is a new id.
+  Once a claim is decided, its text, evidence and author are frozen. CI checks
+  all of this against the pull request's base (CLM013, CLM014).
+- **Never rewrite a recorded hash to match a changed file.** If the artifact
+  changed, the claim about the old artifact is still what was claimed.
+- **WARN is not ok.** A reviewer or approver named in a file is a declaration.
+  `tools/confirm_approvals.py` turns it into a fact, in CI, by asking GitHub
+  whether that person approved the pull request's head commit. Until that job
+  has passed, say "declared", never "reviewed".
+- **Agents are not members.** They may author a claim (recording the model and
+  prompt hash), never review or approve one. They would be listed in a
+  top-level `agents:` list in `syndicate.yaml`, which does not exist yet —
+  adding it is a manifest change for the agreements gate (Agreement 10.3), not
+  something to do in passing.
+
 ## Record organs — append, never rewrite
 
 Three directories are the record of what this syndicate proved, who it bound,
@@ -102,11 +129,13 @@ Read the refusal; it is usually the whole answer.
 | `tools/attribution.py` | each member's share of a window | 0 · 1 human |
 | `tools/join.py` | add a member, correctly | 0 · 1 human |
 | `tools/ingest_arxiv.py` | pull literature into the vault, idempotently | 0 · 1 human · 2 transient |
+| `tools/doctor_claims.py` | are the claims in `ledger/claims/` what they say they are | 0 ok · 1 blocked |
+| `tools/confirm_approvals.py` | did the reviewers a claim names approve its pull request | 0 · 1 human · 2 transient |
 
 Where a tool has an exit 2, it means *try again later* — a rate limit, a
 timeout, an outage. It is not a failure to route to a human, and it is not a
-reason to retry in a loop. Only `drift_check.py` and `ingest_arxiv.py` have
-one; the rest split 0 / 1, and `drift_check.py` alone uses 3 for "drift found",
+reason to retry in a loop. Only `drift_check.py`, `ingest_arxiv.py` and
+`confirm_approvals.py` have one; the rest split 0 / 1, and `drift_check.py` alone uses 3 for "drift found",
 which is actionable rather than an error.
 
 This table is checked by `tests/test_generation_smoke.py`. If you change a

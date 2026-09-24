@@ -1,0 +1,57 @@
+# Copy to ledger/claims/<ID>.yaml; the filename stem must equal `id:`.
+# Check it with: python3 tools/doctor_claims.py
+#
+# A claim has no status field. Its state is the state of its last history
+# entry, and history is append-only: every decision is a new entry, and no
+# entry is ever edited (vault/MAP.md law 4 - this file is under ledger/, and
+# the anchor chain hashes it). Once a claim has been verified or rejected,
+# its text, section, author, evidence and human_gate are frozen: a different
+# claim is a new id. A rejected claim stays rejected.
+
+id: C-0000
+text: >
+  One sentence a reader can check. No hedging, no ranges dressed as points.
+
+section: capability-cyber
+
+# A member's `github:` login from syndicate.yaml, or the `name:` of a row in a
+# top-level `agents:` list. That list does not exist yet: agents are not parties
+# to the Agreement, and adding it goes through the agreements gate (10.3).
+author: "member-github-login"
+
+# Required when the author is an agent; omit it otherwise.
+# authored_by_model:
+#   model: "<model id>"
+#   prompt_sha256: "<sha256 of the exact prompt>"
+
+# At least one artifact, committed in this repository, with the sha256 of its
+# bytes. kind: eval_run | prior_model | report | dataset | external
+# (external: ref is a URL and the digest cannot be checked offline).
+evidence:
+  - kind: eval_run
+    ref: evals/cyber/uplift-2026-09-14.json
+    sha256: "<sha256sum of the committed file>"
+
+# Optional. `required` means a verified entry must also name approved_by: a
+# current member who is neither the author nor an agent.
+human_gate: required
+
+history:
+  - at: 2026-09-24            # the author's date; the anchor is the evidence of time
+    state: draft
+    by: "member-github-login"
+    blocked_by: "what this claim is waiting on"
+  # A decision names who reviewed it. The reviewer (and approved_by, when
+  # gated) must approve the pull request that adds this entry, on its final
+  # commit - tools/confirm_approvals.py checks that in CI.
+  # - at: 2026-09-25
+  #   state: verified
+  #   by: "member-github-login"
+  #   reviewer: "another-member-login"
+  #   approved_by: "a-member-login"
+  #   reason: "evidence resolves; methodology matches the claim"
+  # - at: 2026-09-26
+  #   state: rejected
+  #   by: "member-github-login"
+  #   reviewer: "another-member-login"
+  #   reason: "the eval's methodology contradicts the claim text"

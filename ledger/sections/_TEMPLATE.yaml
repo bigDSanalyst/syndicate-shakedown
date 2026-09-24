@@ -1,0 +1,10 @@
+# Copy to ledger/sections/<id>.yaml; the filename stem must equal `id:`.
+# A section is a list of citations, not prose. Its text is composed from the
+# cited claims' text when it is rendered, so a section cannot say anything its
+# claims do not. Every cited claim must be verified, with evidence that
+# resolves (tools/doctor_claims.py, CLM010).
+
+id: capability-cyber
+title: Cyber capability
+claims:
+  - C-0000
