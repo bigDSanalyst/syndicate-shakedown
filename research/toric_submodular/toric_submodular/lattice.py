@@ -84,10 +84,13 @@ def mobius(f):
 
 
 def walsh(f):
-    """Walsh-Fourier coefficients c(S) = 2^-n sum_A f(A) (-1)^{|S & A|}.
+    """Walsh-Hadamard coefficients c(S) = 2^-n sum_A f(A) (-1)^{|S & A|}.
 
-    These are the Fourier coefficients of f viewed as a function on the
-    2-torsion subgroup T^n[2] = {0, pi}^n ~ (Z/2)^n (see extensions.py).
+    The Fourier transform of f on the 2-torsion subgroup T^n[2] = {0, pi}^n
+    ~ (Z/2)^n, and exactly the cosine coefficients of the torus lift F (see
+    `walsh_from_mobius` for the proof). A different linear map from `mobius`:
+    for f = 1_{{0}} on n = 2 this gives [1/4, -1/4, 1/4, -1/4], mobius gives
+    [0, 1, 0, -1].
     """
     t = [Fraction(v) for v in f]
     n = _n_of(t)
@@ -102,10 +105,26 @@ def walsh(f):
 
 
 def walsh_from_mobius(fhat):
-    """c(S) = (-1)^{|S|} sum_{T superset S} fhat(T) 2^{-|T|}  (exact identity).
+    """Cosine coefficients of F from the Mobius atoms:
 
-    Follows from expanding prod_{i in T} (1 - cos t_i)/2 in the monomials
-    prod_{i in S} cos t_i. Tested against `walsh` in the suite.
+        c(S) = (-1)^{|S|} sum_{T superset S} 2^{-|T|} fhat(T).
+
+    Theorem. Let F(theta) = sum_T fhat(T) prod_{i in T} (1 - cos theta_i)/2
+    (the multilinear extension pulled back by w = sin^2(theta/2)). Then
+    F(theta) = sum_S c(S) prod_{i in S} cos theta_i with c(S) as above, and
+    c = walsh(f), the Walsh-Hadamard transform.
+
+    Proof. (1) Expanding prod_{i in T} (1 - cos)/2 = 2^{-|T|} sum_{S <= T}
+    (-1)^{|S|} prod_{i in S} cos gives the formula for c. (2) At theta = pi*x,
+    cos theta_i = (-1)^{x_i} and w = x, so f(x) = F(pi*x) =
+    sum_S c(S) (-1)^{|S & x|}. (3) The 2^n characters (-1)^{|S & x|} of
+    (Z/2)^n are orthogonal, so that expansion is unique and inverting it gives
+    c(S) = 2^-n sum_x f(x) (-1)^{|S & x|}.
+
+    So the atoms are the coordinates of F in the product basis
+    prod (1 - cos)/2, and the Hadamard coefficients are its coordinates in the
+    product basis prod cos. The suite pins c = walsh(f) against a
+    quadrature extraction that uses neither formula.
     """
     t = [Fraction(v, 1 << popcount(m)) for m, v in enumerate(fhat)]
     n = _n_of(t)

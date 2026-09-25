@@ -4,7 +4,8 @@ import random
 import time
 
 from . import (coverage_counterexample, in_sign_cone, is_submodular, minimize, mobius,
-               morse_index, sign_flow, spurious_torus_minima, verify_certificate, walsh)
+               morse_index, sign_flow, spurious_torus_minima, toric_lovasz, verify_certificate,
+               walsh)
 from .lattice import to_mask
 
 TRAP = [0, 7, 1, 4, 2, 7, -1, 0]
@@ -19,7 +20,7 @@ def main():
           "in M_-:", in_sign_cone(cov), "-> M_- is strictly smaller")
     print("Layer 2  Walsh = cosine coefficients of the torus potential:",
           [str(c) for c in walsh(TRAP)])
-    print("Layer 4  Morse index at theta=0:", morse_index(TRAP, 0),
+    print("Layer 4  multilinear lift F: Morse index at theta=0:", morse_index(TRAP, 0),
           " spurious torus minima:", spurious_torus_minima(TRAP))
     tr = sign_flow(f, [0.0] * 3)
     print("Layer 3  specified sign flow from theta=0: stalled =", tr.stalled_at_start,

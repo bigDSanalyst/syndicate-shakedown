@@ -21,13 +21,24 @@ What survives from the source framework, and what does not:
   At theta = pi*x it equals f(x). This is the real content of "torsion points
   carry the discrete truth": Pontryagin duality on (Z/2)^n, not class field
   theory.
-* Every torsion point is a critical point of F (dw/dtheta = sin(theta)/2 = 0),
-  and the Hessian there is diagonal with entries (f(x xor e_i) - f(x))/2 - the
-  single-flip gains (see `torsion_hessian`). So the Morse index of a torsion
-  point is its number of improving flips, and every 1-flip local minimum of f
-  is a local minimum of F on the torus. Poincare-Hopf (chi(T^n) = 0) constrains
-  the signed count of critical points; it does not forbid spurious minima, and
-  submodular functions do have them (tests/test_torus.py exhibits one).
+* Local minima: the two lifts behave differently, and the chi(T^n) = 0
+  argument proves nothing about either. It fixes only the signed count of
+  critical points.
+  - Multilinear lift F. Every torsion point is critical (dw/dtheta =
+    sin(theta)/2 = 0), and the Hessian there is diagonal with entries
+    (f(x xor e_i) - f(x))/2, the single-flip gains (`torsion_hessian`). The
+    Morse index is the number of improving flips. So every strict 1-flip local
+    minimum of f is a strict local minimum of F, and submodular f do have
+    non-global ones (TRAP in tests/test_torus.py).
+  - Lovasz lift L o w, the potential the source framework names. For
+    submodular f it has no spurious local minima. L is convex on the cube,
+    and w = sin^2(theta/2) maps every neighbourhood of theta onto a relative
+    neighbourhood of w(theta) in [0,1]^n. So a local minimum of L o w is a
+    local minimum of L on the cube, hence global. At TRAP's theta = 0 the lift
+    descends along (0, s, s).
+  The sign flow fails anyway (flow.py). The chain-rule subgradient vanishes at
+  every torsion point, minimum or not, so it stalls at points that are not
+  minima of the potential it is descending.
 """
 import math
 from fractions import Fraction
@@ -158,9 +169,9 @@ def morse_index(f, x_mask):
 
 
 def spurious_torus_minima(f):
-    """Torsion points that are strict local minima of F but not global minima.
-
-    Non-empty lists refute the claim that chi(T^n) = 0 rules out false minima.
+    """Torsion points that are strict local minima of the multilinear lift F
+    but not global minima of f. (The Lovasz lift has none for submodular f;
+    see the module docstring.)
     """
     n = len(f).bit_length() - 1
     lo = min(f)

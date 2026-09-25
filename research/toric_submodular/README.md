@@ -8,11 +8,37 @@ optimizer) with one that does: exact submodular minimization that returns a
 
 ```
 python3 -m toric_submodular            # run from this directory; walks every layer
-python3 -m pytest -q tests             # 204 tests, pure Python 3.11, no numpy
+python3 -m pytest -q tests             # 230 tests, pure Python 3.11, no numpy
 ```
 
 Pure standard library. Values stay in `int`/`Fraction` from start to finish,
 so nothing you get back has been rounded.
+
+## Corrections to the source writeup
+
+This package implements, and corrects, the five-layer "unified mathematical
+framework" writeup: discrete Boolean lattice → toric embedding → Morse–
+Riemannian flow → topological fixed-point guarantees → class field theory
+duality. If you read that document first, this is the delta, one line per
+layer. The table below gives the detail and the tests.
+
+1. **Discrete domain.** The Möbius decomposition stands. "Submodular ⇔
+   non-positive higher atoms" is wrong: the sign cone is sufficient, not
+   necessary.
+2. **Toric embedding.** No boundary and no KKT multipliers: stands. Convexity
+   on the torus: false. "Torsion points carry the discrete truth" now has a
+   proof: the lift's cosine coefficients are the Walsh–Hadamard transform of f.
+3. **Morse–Riemannian flow.** Removed as an optimizer. D(θ) is not a metric.
+   The chain-rule gradient vanishes at every torsion point, so the flow stalls
+   at points that are not minima. The engine that replaces it is the
+   min-norm-point solver.
+4. **Topological guarantees.** The Poincaré–Hopf and Tarski arguments are
+   invalid. What is true instead: the Lovász lift has no spurious local minima
+   for submodular f (convexity, not topology); the multilinear lift does have
+   them (Hessian = half the flip gains); the minimizers form a lattice, with
+   its bottom and top read off x*.
+5. **Class field theory.** Removed. Only the Walsh–Hadamard identity (layer 2)
+   and the ring ℝ[x]/(xᵢ² − xᵢ) remain.
 
 ## The corrected framework, layer by layer
 
@@ -23,12 +49,45 @@ so nothing you get back has been rounded.
 | 1 | M₋ "guarantees convexity" | **Corrected** | Lovász extension L(w) = Σ f̂(S) min_{i∈S} wᵢ is convex on [0,1]ⁿ **iff f is submodular**, which is weaker than M₋ (`test_lovasz_greedy_equals_mobius_form`) |
 | 2 | w = sin²(θ/2) embeds into Tⁿ, no boundary, no KKT | **True** | θ needs no constraints. But the map is 2-to-1 and dw/dθ vanishes at every θᵢ ∈ {0, π} |
 | 2 | Convexity survives on the torus | **False** | On a compact manifold, a geodesically convex function has to be constant. L(w(θ)) is not convex |
-| 2 | "Pontryagin duality" | **Made precise** | Pull the multilinear extension back to the torus and you get a trigonometric polynomial, F(θ) = Σ_S c(S) Π_{i∈S} cos θᵢ. Its coefficients c are **exactly the Walsh–Fourier coefficients of f**, i.e. Fourier analysis on Tⁿ[2] ≅ (ℤ/2)ⁿ (`test_walsh_coefficients_from_atoms`, `test_toric_potential_is_the_walsh_series…`) |
+| 2 | "Pontryagin duality" | **Made precise** | Pull the multilinear extension back to the torus and you get a trigonometric polynomial, F(θ) = Σ_S c(S) Π_{i∈S} cos θᵢ. Its coefficients are **the Walsh–Hadamard transform** c(S) = 2⁻ⁿ Σ_T (−1)^{\|S∩T\|} f(T), **not** the Möbius transform. Proof and tests: see *The Walsh–Hadamard identity* below |
 | 3 | D(θ) = diag(1/\|gᵢ\|) is a Riemannian metric; sign descent is stable | **False** | D depends on the gradient, not on position, and it is undefined wherever gᵢ = 0. At every torsion point, gᵢ = 0 in every coordinate. So the flow is signSGD, and it cannot leave a torsion point (`flow.py`, `test_specified_flow_stalls…`) |
-| 4 | Poincaré–Hopf (χ(Tⁿ) = 0) rules out false minima | **False** | χ = 0 only fixes the signed count of critical points. **New exact result:** every torsion point πx is a critical point of F, and its Hessian is diagonal with H_ii = (f(x⊕eᵢ) − f(x))/2. So its Morse index is its number of improving single flips. Every 1-flip local minimum of f is therefore a local minimum on the torus, and submodular f do have non-global ones: `TRAP = [0,7,1,4,2,7,-1,0]` (`test_torsion_hessian_is_half_the_flip_gains`, `test_trap_is_submodular_and_a_spurious_minimum`) |
+| 4 | Poincaré–Hopf (χ(Tⁿ) = 0) rules out false minima | **Argument invalid; conclusion depends on the lift** | χ = 0 only fixes the signed count of critical points. It proves nothing about basins. **Lovász lift 𝓛 = L∘w**, the one the source names: for submodular f it has **no** spurious local minima. L is convex on the cube, and w maps every neighbourhood of θ onto a relative neighbourhood in the cube, so a local minimum of 𝓛 is a local minimum of L and hence global (`test_lovasz_lift_has_no_spurious_torsion_minima`). **Multilinear lift F**: every torsion point πx is critical, and the Hessian there is diagonal with H_ii = (f(x⊕eᵢ) − f(x))/2. So the Morse index counts improving single flips, and every strict 1-flip local minimum of f is a strict local minimum of F. Submodular f have non-global ones: `TRAP = [0,7,1,4,2,7,-1,0]` is a spurious minimum of F at θ = 0, but 𝓛 descends there along (0, s, s) (`test_torsion_hessian_is_half_the_flip_gains`, `test_trap_is_a_spurious_minimum_of_multilinear_but_not_of_lovasz`) |
 | 4 | Tarski ⇒ the flow ends at a lattice fixed point | **Replaced** | The true lattice statement: for submodular f, **the minimizers form a sublattice**, closed under ∪ and ∩. Its bottom and top elements are read off one continuous point, the min-norm point x* of the base polytope: A_min = {x* < 0}, A_max = {x* ≤ 0} (Fujishige 1980) (`test_…minimizers_form_a_lattice`, `test_matches_brute_force_including_extreme_minimizers`) |
 | 5 | Atoms are prime ideals; Kronecker–Weber extraction | **Removed** | f̂(S) are real numbers, not ideals, and no abelian extension of ℚ is involved. The honest algebra: functions on {0,1}ⁿ form the ring ℝ[x]/(xᵢ² − xᵢ). Its maximal ideals (xᵢ − aᵢ) correspond one-to-one to vertices, which are the torsion points. The atoms are coordinates in its monomial basis |
 | — | "Zero-friction collapse" to the exact answer | **Built** | `solver.minimize`, below |
+
+## The Walsh–Hadamard identity
+
+Let F(θ) = Σ_T f̂(T) Π_{i∈T} (1 − cos θᵢ)/2, the multilinear extension pulled
+back by w = sin²(θ/2), where f̂ are the Möbius atoms.
+
+**Theorem.** F(θ) = Σ_S c(S) Π_{i∈S} cos θᵢ, where
+
+- c(S) = (−1)^{|S|} Σ_{T⊇S} 2^{−|T|} f̂(T)  (from the atoms), and
+- c(S) = 2⁻ⁿ Σ_T (−1)^{|S∩T|} f(T)  (the Walsh–Hadamard transform).
+
+**Proof.**
+
+1. Expand Π_{i∈T}(1 − cos θᵢ)/2 = 2^{−|T|} Σ_{S⊆T} (−1)^{|S|} Π_{i∈S} cos θᵢ.
+   This gives the first formula.
+2. At θ = πx we have cos θᵢ = (−1)^{xᵢ} and w = x, so
+   f(x) = F(πx) = Σ_S c(S)(−1)^{|S∩x|}.
+3. The 2ⁿ characters (−1)^{|S∩x|} of (ℤ/2)ⁿ are orthogonal, so this expansion
+   is unique. Inverting it gives the second formula. ∎
+
+The two transforms are different linear maps, and each has a role:
+
+- The **Möbius atoms** are F's coordinates in the product basis Π(1 − cos θᵢ)/2.
+- The **Hadamard coefficients** are F's coordinates in the product basis
+  Π cos θᵢ.
+
+For f = 1_{{0}} on n = 2, the Hadamard transform gives [¼, −¼, ¼, −¼] and the
+Möbius transform gives [0, 1, 0, −1] (`test_the_two_transforms_are_different_maps`).
+
+The tests pin the **Hadamard** form. `test_cosine_coefficients_are_the_hadamard_transform_not_mobius`
+extracts F's cosine coefficients by exact quadrature on the grid
+{0, π/2, π, 3π/2}ⁿ. The quadrature evaluates F only through its Möbius form,
+so it uses neither formula above, and it matches `walsh()` exactly.
 
 ## The engine
 
@@ -63,22 +122,30 @@ Cross-checks:
 
 ## Mutation testing
 
-Following this repository's standard (CLAUDE.md), 11 mutations were applied one
+Following this repository's standard (CLAUDE.md), 15 mutations were applied one
 at a time, each run with bytecode caching disabled:
 
 - the minimal-minimizer threshold;
-- the three certificate checks: duality gap, negative weights, weight sum;
+- two certificate checks: duality gap, negative weights;
 - Wolfe's minor cycle;
 - the Hessian factor ½;
 - the greedy sort direction;
 - the last level set in rounding;
-- the Walsh sign;
+- the atoms→cosine sign;
 - the submodularity inequality;
 - the sign-cone order;
-- the flow stall flag.
+- the flow stall flag;
+- the Hadamard normalization 2⁻ⁿ;
+- the Hadamard butterfly sign;
+- the torus map sin²(θ/2);
+- the Lovász-lift evaluation.
 
 The suite failed under every one. The sign-cone mutation survived at first,
-and `test_sign_cone_includes_pairwise_atoms` was added to catch it.
+and `test_sign_cone_includes_pairwise_atoms` was added to catch it. The two
+Hadamard mutations were also run against the quadrature test alone, and it
+caught both by itself. The weight-sum check in `verify_certificate` is covered
+by a tamper test (`test_tampered_certificates_are_refused`) but was not
+mutation-tested.
 
 ## Scope
 

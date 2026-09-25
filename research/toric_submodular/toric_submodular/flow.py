@@ -8,7 +8,8 @@ g_i = 0 - which, because dw_i/dtheta_i = sin(theta_i)/2, is every coordinate at
 0 or pi. The flow is coordinate-wise sign descent (signSGD). Consequences the
 suite checks rather than asserts:
 
-  * it cannot leave a torsion point: every sign there is 0;
+  * it cannot leave a torsion point: every sign there is 0. That includes
+    torsion points that are not local minima of L o w (TRAP at theta = 0);
   * with a fixed dt every non-zero coordinate moves by dt at every step, so
     iterates settle only by landing exactly on a zero-sign point;
   * it carries no optimality guarantee. Level-set rounding of its iterates is
