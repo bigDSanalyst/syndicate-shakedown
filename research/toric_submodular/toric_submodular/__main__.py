@@ -21,7 +21,9 @@ def main():
     print("Layer 2  Walsh = cosine coefficients of the torus potential:",
           [str(c) for c in walsh(TRAP)])
     print("Layer 4  multilinear lift F: Morse index at theta=0:", morse_index(TRAP, 0),
-          " spurious torus minima:", spurious_torus_minima(TRAP))
+          " spurious minima of F:", spurious_torus_minima(TRAP))
+    print("         Lovasz lift at theta=(0,.01,.01):", round(toric_lovasz(f, [0, .01, .01]), 8),
+          "< 0, so theta=0 is not a minimum of L o w")
     tr = sign_flow(f, [0.0] * 3)
     print("Layer 3  specified sign flow from theta=0: stalled =", tr.stalled_at_start,
           " best found =", tr.best_value)
