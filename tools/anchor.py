@@ -19,6 +19,14 @@ marks Bitcoin confirmation. verify works on a bare file export (no git,
 no Bitcoin node); the ots CLI is needed only for .ots digest checks.
 
 Commands: run, upgrade, verify, milestone --tag T --message M.
+
+Exit codes:
+    0  done - every anchor's state was established
+    1  needs a human: an anchor unsubmitted past the stale window, or a broken
+       chain on `verify`
+    2  transient: the OpenTimestamps calendars could not be reached, so some
+       anchors' state is unknown. NOT the same as unconfirmed, which is a
+       statement about Bitcoin rather than about the network.
 """
 import argparse
 import hashlib
@@ -144,11 +152,71 @@ def ots_cli():
     return path
 
 
+BROKEN_INSTALL = "ots-broken-install"
+
+
 def run_ots(*args):
+    """Run ots, and distinguish the three ways it can let you down.
+
+    shutil.which() answers "is there a file here", and exec answers "can it
+    run". They disagree more often than they look like they would: a pipx or
+    uv tool install whose interpreter was upgraded out from under it leaves a
+    shim which() finds happily and exec refuses with FileNotFoundError - for
+    the shim itself, not for ots. This function used to catch only
+    TimeoutExpired, so that case reached the operator as a raw traceback
+    (row 73), where every other tool in this repository names its reason.
+
+    It also matters WHICH failure it is: a broken install is a human's job
+    (reinstall), not a transient the caller should retry when the network is
+    back. Returning them as the same thing sends someone to wait for weather
+    that was never the problem.
+
+    (The distinction is lifted from Panniantong/Agent-Reach's probe.py, which
+    names missing / broken / timeout as three modes that shutil.which()
+    flattens into one.)
+    """
     try:
         return subprocess.run(["ots", *args], capture_output=True, text=True, timeout=300)
     except subprocess.TimeoutExpired:
         return subprocess.CompletedProcess(args=[], returncode=1, stdout="", stderr="ots timed out")
+    except OSError as e:
+        # FileNotFoundError: dead shebang or vanished between which() and exec.
+        # PermissionError: present, found, and not executable.
+        return subprocess.CompletedProcess(
+            args=[], returncode=1, stdout="",
+            stderr=BROKEN_INSTALL + ": ots is on PATH but will not execute (%s). "
+                   "Reinstall it - `pip install --force-reinstall "
+                   "opentimestamps-client` - this is not a network problem and "
+                   "retrying will not help." % e.__class__.__name__)
+
+
+# A calendar we could not talk to is not a calendar that told us "not yet".
+# ots logs one line per calendar it tried; a connection failure looks like
+#   Calendar https://alice.btc.calendar.opentimestamps.org: Tunnel connection failed: 403 Forbidden
+# Read as an allowlist of known-good statuses rather than a denylist of
+# failures, deliberately: an unrecognised status becomes "could not look",
+# which is the safe direction. Claiming "not yet confirmed" about a calendar
+# that never answered is the failure this whole function exists to stop.
+CALENDAR_LINE = re.compile(r"^Calendar\s+(\S+):\s*(.+)$", re.M)
+CALENDAR_OK = ("pending", "attestation", "complete", "success")
+
+
+def calendars_answered(r):
+    """(answered, first_problem). False when no calendar gave us a real answer."""
+    if r is None:
+        return False, "ots was never run"
+    text = ((r.stderr or "") + "\n" + (r.stdout or ""))
+    problems = [(u, t.strip()) for u, t in CALENDAR_LINE.findall(text)
+                if not any(k in t.lower() for k in CALENDAR_OK)]
+    if problems:
+        return False, "%s: %s" % problems[0]
+    if r.returncode != 0 and not CALENDAR_LINE.search(text):
+        # ots failed and said nothing about any calendar - we cannot claim we
+        # looked. "Failed! Timestamp not complete" alone does not distinguish
+        # "the block has not happened yet" from "the network was not there".
+        tail = [l for l in text.strip().splitlines() if l.strip()]
+        return False, (tail[-1] if tail else "ots exited %d with no output" % r.returncode)
+    return True, ""
 
 
 def parse_info(text):
@@ -174,10 +242,21 @@ def info_for(ots_path):
 
 
 def ensure_stamps(repo, log_path):
+    """Returns the number of anchors whose state could not be established.
+
+    Not the number that are unconfirmed - the number nobody managed to ask
+    about. Those are two different facts and this function used to print the
+    first when it meant the second.
+    """
     if not ots_cli():
-        return
+        # The message is printed above, but a message is not an exit code, and
+        # a workflow reads the exit code. Every still-unconfirmed anchor here
+        # is one we did not check.
+        return len([e for e in load_log(log_path) if e["status"] != "confirmed"])
     entries = load_log(log_path)
     changed = False
+    unchecked = 0
+    broken = []
     for e in entries:
         manifest = repo / e["manifest"]
         ots = Path(str(manifest) + ".ots")
@@ -191,11 +270,23 @@ def ensure_stamps(repo, log_path):
                 changed = True
                 info = parse_info(info_for(ots))
                 print("submitted #" + format(e["seq"], "04d") + " (digest " + (info["digest"] or "?")[:12] + ")")
+            elif BROKEN_INSTALL in (r.stderr or ""):
+                broken.append(format(e["seq"], "04d"))
             else:
-                tail = (r.stderr or r.stdout or "").strip().splitlines()
-                print("stamp failed #" + format(e["seq"], "04d") + ": " + (tail[-1] if tail else "unknown"))
+                # Row 76: an anchor that could not be submitted is one this run
+                # established nothing about, exactly like one it could not
+                # upgrade (row 62). Printing "stamp failed" and exiting 0 was
+                # that lie through the other door.
+                answered, problem = calendars_answered(r)
+                if answered:
+                    tail = (r.stderr or r.stdout or "").strip().splitlines()
+                    problem = tail[-1] if tail else "ots stamp failed with no output"
+                unchecked += 1
+                print("unsubmitted #" + format(e["seq"], "04d") + " - could not reach the "
+                      "calendars to submit it (" + problem + ")")
         elif e["status"] != "confirmed":
-            run_ots("upgrade", str(ots))
+            r = run_ots("upgrade", str(ots))
+            answered, problem = calendars_answered(r)
             info = parse_info(info_for(ots))
             if e["status"] == "unsubmitted":
                 e["status"] = "pending"
@@ -209,10 +300,25 @@ def ensure_stamps(repo, log_path):
                     e["height"] = info["height"]
                 changed = True
                 print("confirmed #" + format(e["seq"], "04d") + " in Bitcoin (block " + str(info["height"] or "?") + ")")
+            elif BROKEN_INSTALL in (r.stderr or ""):
+                # Not transient. Nobody should be told to try again later.
+                broken.append(format(e["seq"], "04d"))
+            elif not answered:
+                unchecked += 1
+                print("unknown #" + format(e["seq"], "04d") + " - could not reach the "
+                      "calendars, so nothing was checked (" + problem + "). This is "
+                      "NOT 'not yet confirmed': that would be a claim about Bitcoin, "
+                      "and no one answered.")
             else:
                 print("pending #" + format(e["seq"], "04d") + " - not yet in a Bitcoin block")
     if changed:
         rewrite_log(log_path, entries)
+    if broken:
+        print("ots is installed but will not run, so anchors " + ", ".join(broken)
+              + " were not checked. Reinstall opentimestamps-client; this is "
+              "not a network problem.")
+        return -1      # needs a human, not a retry
+    return unchecked
 
 
 def stale_unsubmitted(log_path):
@@ -304,11 +410,23 @@ def main():
             "syndicate. Anchoring here writes a chain that every generated repo\n"
             "inherits (operator rule #10). Edit the manifest with real members\n"
             "first; the workflow itself is already proven by its run history.")
+    # `run` and `upgrade` are asked different questions and must not share an
+    # exit discipline. `run` is asked to RECORD an anchor; stamping is
+    # best-effort and explicitly deferred, so a machine with no ots still
+    # succeeded at what it was asked - the entry exists, marked unsubmitted,
+    # and stale_unsubmitted() below escalates it to exit 1 if it stays that
+    # way past the window. `upgrade` is asked to FIND OUT whether anchors
+    # confirmed, so a run that could not look has failed at its only job.
+    #
+    # Row 74: giving `run` upgrade's discipline made it exit 2 wherever ots
+    # is not installed - true of Colab, where the suite failed while passing
+    # on every machine that happened to have it.
+    unchecked = 0
     if args.command == "run":
         make_anchor(repo, anchors_dir, log_path)
         ensure_stamps(repo, log_path)
     elif args.command == "upgrade":
-        ensure_stamps(repo, log_path)
+        unchecked = ensure_stamps(repo, log_path)
     elif args.command == "milestone":
         if not (args.tag and args.message):
             sys.exit("milestone requires --tag and --message")
@@ -320,6 +438,16 @@ def main():
     if stale:
         print("error: anchors " + str(stale) + " unsubmitted for more than " + str(STALE_DAYS) + " days")
         return 1
+    if unchecked < 0:
+        return 1       # broken toolchain: a human has to fix the install
+    if unchecked:
+        # Transient, not a failure to route to a human: the calendars were not
+        # reachable, so this run establishes nothing about those anchors. Exit
+        # 0 here would be a green run meaning "I could not look" - operator
+        # rule #8 - in the tool the whole priority claim rests on.
+        print(str(unchecked) + " anchor(s) could not be checked at all. Run this "
+              "again when the network is back; nothing is wrong with the chain.")
+        return 2
     return 0
 
 
